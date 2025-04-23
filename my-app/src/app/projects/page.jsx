@@ -12,7 +12,7 @@ export default function ProjectsPage() {
         {/* Project Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ProjectCard
-            title="Pick a Fit App"
+            title="Pick-a-Fit App"
             description="Cloud-based outfit recommendation system using AWS and weather data."
             tools={['AWS', 'Python', 'Docker', 'Rekognition', 'WeatherAPI']}
             link="https://github.com/portiali/pick-a-fit"
