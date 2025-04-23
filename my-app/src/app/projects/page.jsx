@@ -15,8 +15,15 @@ export default function ProjectsPage() {
             title="Pick a Fit App"
             description="Cloud-based outfit recommendation system using AWS and weather data."
             tools={['AWS', 'Python', 'Docker', 'Rekognition', 'WeatherAPI']}
-            link="https://github.com/yourname/pick-a-fit"
+            link="https://github.com/portiali/pick-a-fit"
           />
+          <ProjectCard
+            title="SeedSwap"
+            description="Built a full-stack web app for seed trading using React, Node.js, Express, and MongoDB. Implemented RESTful APIs, user authentication, and location-based gardener matching to support a community-driven seed swapping platform."
+            tools={['React', 'Node.js', 'Express', 'MongoDB', 'REST']}
+            link="https://github.com/portiali/seedswap"
+          />
+
 
           <ProjectCard
             title="Cloud-Native PhotoApp"
@@ -28,7 +35,7 @@ export default function ProjectsPage() {
             title="CampusClicks"
             description="Full-stack campus photo sharing app with leaderboard and RESTful API integration."
             tools={['React', 'Node.js', 'PostgreSQL']}
-            link="https://github.com/yourname/campusclicks"
+            // link="https://github.com/yourname/campusclicks"
           />
 
           <ProjectCard
@@ -47,7 +54,7 @@ export default function ProjectsPage() {
             title="Tec-A-Peek"
             description="Python app for parsing professor ratings and delivering personalized course recommendations."
             tools={['Python']}
-            link="https://github.com/yourname/tec-a-peek"
+            // link="https://github.com/yourname/tec-a-peek"
           />
 
           <ProjectCard
