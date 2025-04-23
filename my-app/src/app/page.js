@@ -10,7 +10,7 @@ export default function Home() {
 
         {/* Bio */}
         <p className="text-gray-700 dark:text-gray-300">
-          I&apos;m a developer with a passion for creative technology, clean code, and continuous learning.
+          i&apos;m a CS student at Northwestern and a developer with a passion for creative technology, interdiscplinary applications, and continuous learning.
         </p>
 
         {/* Icons row */}

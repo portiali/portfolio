@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* Home on the left */}
       <Link href="/" className="flex items-center gap-2 hover:opacity-75">
         <Home className="w-5 h-5" />
-        <span className="hidden sm:inline">home</span>
+        <span className="hidden sm:inline"></span>
       </Link>
 
       {/* Centered Links */}
