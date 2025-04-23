@@ -1,29 +1,33 @@
+
+
 'use client'
-import { Code2, Github, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink } from 'lucide-react'
 
 export default function ProjectCard({ title, description, tools, link }) {
   return (
-    <div className="bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-xl shadow hover:shadow-lg transition p-6 space-y-4">
-      
-      {/* Title */}
+    <div className="bg-[rgba(255,255,255,0.05)] border border-white/20 backdrop-blur-sm text-gray-300 p-6 rounded-md shadow-md hover:shadow-lg transition space-y-4">
+
+      {/* Header */}
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-lg font-semibold text-white">{title}</h3>
         {link && (
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="w-5 h-5 text-gray-500 hover:text-blue-500" />
+          <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`${title} external link`}>
+            <ExternalLink className="w-5 h-5 text-gray-400 hover:text-blue-400 transition" />
           </a>
         )}
       </div>
 
       {/* Description */}
-      <p className="text-gray-600 dark:text-gray-300 text-sm">{description}</p>
+      <p className="text-sm leading-relaxed text-gray-300">
+        {description}
+      </p>
 
       {/* Tools */}
-      <div className="flex flex-wrap gap-2 pt-2 text-xs">
+      <div className="flex flex-wrap gap-2 text-xs">
         {tools.map((tool, i) => (
           <span
             key={i}
-            className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-2 py-1 rounded-md"
+            className="px-2 py-1 bg-white/10 text-white border border-white/20 rounded-md"
           >
             {tool}
           </span>

@@ -1,31 +1,98 @@
+import TypingText from "@/components/TypingText";
+// export default function About() {
+//   return (
+//     <div className="min-h-screen bg-black px-6 py-16 flex items-start justify-start">
+//       <div className="font-mono max-w-4xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-8 space-y-6 text-left shadow-lg backdrop-blur-sm relative">
+
+//         {/* Heading */}
+//         <div className = "flex-1 space-y-6">
+//         {/* <h1 className="text-4xl font-bold text-white">about me</h1> */}
+//         <TypingText text = "about me"className = "text-4xl"/>
+
+//         {/* Text Content */}
+//         <div className="space-y-4 text-gray-300 leading-relaxed">
+//           <p>
+//             Hey there! I’m Portia — a curious and creative problem solver who’s passionate about both technology and the arts.
+//           </p>
+//           <p>
+//             From coding elegant web apps to performing on stage, I’m driven by the challenge of bringing ideas to life.
+//             I love crafting thoughtful digital experiences that are as meaningful as they are functional.
+//           </p>
+//           </div>
+//         </div>
+//         {/* Profile Image */}
+//         <div className="top-8 right-[-320px] w-[280px] h-[360px] overflow-hidden shadow-xl border border-white">
+//           <img
+//             src="/profile.jpg" // Update with your real image path
+//             alt="Portia Li"
+//             className="object-cover w-full h-full"
+//           />
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default function About(){
+
+// return (
+// <div className="font-mono max-w-4xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-8 text-left shadow-lg backdrop-blur-sm flex gap-8">
+
+//   {/* Text Section */}
+//   <div className="flex-1 space-y-6">
+//     <TypingText text="about me" className="text-4xl" />
+
+//     <div className="space-y-4 text-gray-300 leading-relaxed">
+//       <p>
+//         Hey there! I’m Portia — a curious and creative problem solver who’s passionate about both technology and the arts.
+//       </p>
+//       <p>
+//         From coding elegant web apps to performing on stage, I’m driven by the challenge of bringing ideas to life.
+//         I love crafting thoughtful digital experiences that are as meaningful as they are functional.
+//       </p>
+//     </div>
+//   </div>
+
+//   {/* Image */}
+//   <div className="w-[280px] h-[360px] overflow-hidden shadow-xl border border-white shrink-0">
+//     <img
+//       src="/profile.jpg"
+//       alt="Portia Li"
+//       className="object-cover w-full h-full"
+//     />
+//   </div>
+
+// </div>
+// );
+// }
 export default function About() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-12 relative">
-      <div className="max-w-4xl w-full relative">
+    <div className="min-h-screen bg-black px-6 py-16 flex items-start justify-start gap-8">
 
-        {/* Heading */}
-        <h1 className="text-3xl font-bold text-center mb-8">about me</h1>
-
-        {/* Content Box */}
-        <div className="relative bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8 border dark:border-gray-700 z-10">
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
-            {/* ← Replace this with your about text */}
+      {/* About Me Box */}
+      <div className="font-mono max-w-4xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-8 space-y-6 text-left shadow-lg backdrop-blur-sm">
+        <TypingText text="about me" className="text-4xl" />
+        <div className="space-y-4 text-gray-300 leading-relaxed">
+          <p>
             Hey there! I’m Portia — a curious and creative problem solver who’s passionate about both technology and the arts.
           </p>
-          <p className="text-gray-700 dark:text-gray-300">
-            From coding elegant web apps to performing on stage, I’m driven by the challenge of bringing ideas to life. I love crafting thoughtful digital experiences that are as meaningful as they are functional.
+          <p>
+            From coding elegant web apps to performing on stage, I’m driven by the challenge of bringing ideas to life.
+            I love crafting thoughtful digital experiences that are as meaningful as they are functional.
           </p>
         </div>
-
-        {/* Profile Image */}
-        <div className="absolute top-[-40px] right-[-240px] w-[280px] h-[360px] rounded-md overflow-hidden shadow-xl border dark:border-gray-700">
-          <img
-            src="/profile.jpg" // Update this with your real image path
-            alt="Portia Li"
-            className="object-cover w-full h-full"
-          />
-        </div>
       </div>
+
+      {/* Profile Image (outside the box) */}
+      <div className="w-[280px] h-[360px] overflow-hidden shadow-xl border border-white shrink-0">
+        <img
+          src="/profile.jpg"
+          alt="Portia Li"
+          className="object-cover w-full h-full"
+        />
+      </div>
+
     </div>
   );
 }
