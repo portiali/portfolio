@@ -7,7 +7,7 @@ This project is a personal portfolio site built with Next.js to showcase my back
 The goal was to create a multi-page, interactive, and accessible site using **only custom components** (no UI libraries). I needed to ensure the site accesible meaning that it was screen-reader friendly and used good semantic HTML.
 
 ## Design Approach
-The project is structured with the new `app/` directory, which enables the **App Router** model from Next.js 13+. Pages like `/about`, `/projects`, and `/work` are each in their own folders with a `page.jsx` file.
+The project is structured with the new `app/` directory, which enables the **App Router** model. Pages like `/about`, `/projects`, and `/work` are each in their own folders with a `page.jsx` file.
 
 Reusable components (like `Navbar`, `SocialIcons`, and `ProjectCard`) are organized under `src/components/`, making the code modular and easier to maintain.
 
@@ -18,7 +18,7 @@ User preferences for dark/light mode are saved using `localStorage` and controll
 ## Thought Process
 
 ### Why did you choose to separate out a specific section into a component?
-Sections like the Navbar, Footer, and Project Cards are shared across pages or represent reusable UI logic. By turning them into components, I was able to:
+Sections like the Navbar, SocialIcons, and Project Cards are shared across pages or represent reusable UI logic. By turning them into components, I was able to:
 - Avoid repetition
 - Improve clarity
 - Maintain separation of concerns
