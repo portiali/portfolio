@@ -6,7 +6,6 @@ export default function ThemeToggle() {
   const [theme, setTheme] = useState(null) // initially null to avoid mismatches
 
   useEffect(() => {
-    // Only runs in the browser
     const saved = localStorage.getItem('theme') || 'light'
     setTheme(saved)
     if (saved === 'dark') {

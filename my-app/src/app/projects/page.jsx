@@ -5,11 +5,10 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-black px-6 py-16 flex items-start justify-center">
       <div className="font-mono max-w-6xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-10 shadow-lg backdrop-blur-sm space-y-10">
-        
-        {/* Animated Heading */}
+
         <TypingText text="my projects" className="text-4xl" />
 
-        {/* Project Grid */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ProjectCard
             title="Pick-a-Fit App"
@@ -35,7 +34,6 @@ export default function ProjectsPage() {
             title="CampusClicks"
             description="Full-stack campus photo sharing app with leaderboard and RESTful API integration."
             tools={['React', 'Node.js', 'PostgreSQL']}
-            // link="https://github.com/yourname/campusclicks"
           />
 
           <ProjectCard
@@ -54,7 +52,6 @@ export default function ProjectsPage() {
             title="Tec-A-Peek"
             description="Python app for parsing professor ratings and delivering personalized course recommendations."
             tools={['Python']}
-            // link="https://github.com/yourname/tec-a-peek"
           />
 
           <ProjectCard
