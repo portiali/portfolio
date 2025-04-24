@@ -7,9 +7,7 @@ export default function WorkTimeline() {
       title: 'Incoming Software Engineering Intern',
       company: 'Delsys',
       date: 'June 2025 – Sept. 2025',
-      details: [
-        // 'Implemented backend systems and algorithms for efficient bio signal processing and analysis.'
-      ],
+      details: [],
     },
     {
       title: 'Full Stack Developer',
@@ -33,21 +31,39 @@ export default function WorkTimeline() {
   ]
 
   return (
-    <div className="font-mono max-w-4xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-8 shadow-lg backdrop-blur-sm space-y-10">
-                <TypingText text="work experience" className="text-4xl" />
-      <ul className="space-y-8 text-gray-300">
+    <section
+      aria-labelledby="work-experience-heading"
+      className="font-mono max-w-4xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-8 shadow-lg backdrop-blur-sm space-y-10"
+    >
+ 
+      <TypingText text="work experience" className="text-4xl" />
+      <h2 id="work-experience-heading" className="sr-only">Work Experience</h2>
+
+
+      <ul className="space-y-8 text-gray-300" role="list">
         {jobs.map((job, i) => (
-          <li key={i} className="space-y-1">
-            <div className="text-lg text-white font-semibold">{job.title} <span className="text-sm text-gray-400">@ {job.company}</span></div>
+          <li key={i} className="space-y-2" role="listitem">
+            <div className="text-lg text-white font-semibold">
+              {job.title}{' '}
+              <span className="text-sm text-gray-400">
+                @ {job.company}
+              </span>
+            </div>
             <div className="text-sm text-gray-400">{job.date}</div>
-            <ul className="list-disc list-inside space-y-1 text-sm pl-4">
-              {job.details.map((point, j) => (
-                <li key={j}>{point}</li>
-              ))}
-            </ul>
+
+            {job.details.length > 0 && (
+              <ul
+                className="list-disc list-inside space-y-1 text-sm pl-4"
+                aria-label={`Responsibilities at ${job.company}`}
+              >
+                {job.details.map((point, j) => (
+                  <li key={j}>{point}</li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   )
 }
