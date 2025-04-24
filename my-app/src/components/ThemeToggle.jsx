@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Moon, Sun } from 'lucide-react'
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState(null) // initially null to avoid mismatches
+  const [theme, setTheme] = useState(null) 
 
   useEffect(() => {
     const saved = localStorage.getItem('theme') || 'light'
@@ -26,7 +26,7 @@ export default function ThemeToggle() {
     }
   }
 
-  if (theme === null) return null // Don't render until mounted
+  if (theme === null) return null 
 
   return (
     <button

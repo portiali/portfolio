@@ -20,7 +20,6 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid white;
-    /* animation: typing 1s steps(19, end) forwards, blink 0.7s step-end 2; */
     animation: blink 0.7s step-end 3;
   }
    .animate-cursor {

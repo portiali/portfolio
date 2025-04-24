@@ -34,7 +34,6 @@ export default function WorkTimeline() {
 
   return (
     <div className="font-mono max-w-4xl w-full bg-[rgba(105,58,82,0.3)] border border-white p-8 shadow-lg backdrop-blur-sm space-y-10">
-      {/* <h2 className="text-3xl font-bold text-white">work experience</h2> */}
                 <TypingText text="work experience" className="text-4xl" />
       <ul className="space-y-8 text-gray-300">
         {jobs.map((job, i) => (

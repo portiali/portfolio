@@ -5,12 +5,10 @@ export default function TypingText({ text, className = '' }) {
   const [done, setDone] = useState(false)
   const ref = useRef()
 
-  // Delay is based on character count
   useEffect(() => {
     const timeout = setTimeout(() => {
       setDone(true)
-    }, text.length * 100 + 200) // ~100ms per char
-
+    }, text.length * 100 + 200) 
     return () => clearTimeout(timeout)
   }, [text])
 
