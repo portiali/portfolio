@@ -4,10 +4,16 @@ import TypingText from "./TypingText"
 export default function WorkTimeline() {
   const jobs = [
     {
-      title: 'Incoming Software Engineering Intern',
+      title: 'Software Engineering Intern',
       company: 'Delsys',
       date: 'June 2025 – Sept. 2025',
-      details: [],
+      details: [
+      'Reduced signal deviation by 15 ms (5%) via GPU-accelerated motion analysis with OpenCV CUDA, improving real-time accuracy for biosignal applications.',
+      'Built a C++ microservice in a distributed biosignal processing platform, integrating with ZeroMQ messaging and Redis storage for high-throughput data exchange.',
+      'Contributed to a modular Jetson-deployed pipeline by integrating SciPy-based detrending and debugging data flow across interconnected services.',
+      'Ran batch evaluations and visualized filtered signals across sessions to benchmark detrending accuracy and tune processing parameters.',
+      'Wrote Selenium unit tests to automate validation of data visualization dashboards and ensure cross-browser reliability.',
+      ],
     },
     {
       title: 'Full Stack Developer',

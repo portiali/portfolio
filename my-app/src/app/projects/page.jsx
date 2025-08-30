@@ -18,6 +18,13 @@ export default function ProjectsPage() {
         >
           {[
             {
+              title: "SplitEasy",
+              description:
+                "Real-time group payment app with receipt OCR, itemized bill splitting, and WebSocket-based live updates.",
+              tools: ['FastAPI', 'GraphQL (Strawberry)', 'Firebase', 'WebSockets', 'Tesseract OCR', 'React'],
+              link: "https://github.com/portiali/spliteasy"
+            },
+            {
               title: "Pick-a-Fit App",
               description: "Cloud-based outfit recommendation system using AWS and weather data.",
               tools: ['AWS', 'Python', 'Docker', 'Rekognition', 'WeatherAPI'],
