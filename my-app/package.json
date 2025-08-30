@@ -8,7 +8,8 @@
   "start": "next start",
   "lint": "next lint",
   "clean": "rm -rf .next out",
-  "deploy": "npm run clean && next build && touch out/.nojekyll && gh-pages -d out --dotfiles --branch gh-pages --message 'Deploy from main'"
+  "deploy": "npm run clean && npx next build && touch out/.nojekyll && gh-pages -d out --dotfiles --branch gh-pages --message 'Deploy from main'"
+
 },
 
 
